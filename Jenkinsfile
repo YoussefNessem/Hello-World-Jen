@@ -7,7 +7,7 @@ pipeline {
                 sh '''
                     chmod +x script.sh
                     ./script.sh
-                    sudo docker ps
+                    docker ps
                 '''
             }
         }
