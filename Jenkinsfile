@@ -5,13 +5,17 @@ pipeline {
 
         stage('Hello Jenkins') {
             steps {
-                echo 'Hello Jenkins'
+                sh '''
+                echo "Hello Jenkins"
+                '''
             }
         }
 
         stage('Hello NTI') {
             steps {
-                echo 'Hello NTI'
+                sh '''
+                echo "Hello NTI"
+                '''
             }
         }
 
