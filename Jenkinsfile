@@ -3,19 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Hello Jenkins') {
+        stage('Run Script') {
             steps {
-                sh '''
-                echo "Hello Jenkins"
-                '''
-            }
-        }
-
-        stage('Hello NTI') {
-            steps {
-                sh '''
-                echo "Hello NTI"
-                '''
+                sh './script.sh'
             }
         }
 
