@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     stages {
-
         stage('Run Script') {
             steps {
-                chmod +x script.sh
-                sh './script.sh'
+                sh '''
+                    chmod +x script.sh
+                    ./script.sh
+                '''
             }
         }
-
     }
 }
