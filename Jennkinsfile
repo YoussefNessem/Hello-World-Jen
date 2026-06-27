@@ -3,15 +3,15 @@ pipeline {
 
     stages {
 
-        stage('Hello') {
+        stage('Hello Jenkins') {
             steps {
-                echo 'Hello'
+                echo 'Hello Jenkins'
             }
         }
 
-        stage('World') {
+        stage('Hello NTI') {
             steps {
-                echo 'World'
+                echo 'Hello NTI'
             }
         }
 
